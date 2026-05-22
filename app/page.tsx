@@ -17,13 +17,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/70" />
 
         {/* CONTENT */}
-        <div className="relative z-10 text-center px-6 max-w-3xl">
+        <div className="relative z-10 text-center px-6 max-w-4xl">
 
           {/* LOGO */}
           <img
             src="/logo.png"
             alt="JainZEra"
-            className="w-44 md:w-60 mx-auto mb-8"
+            className="w-44 md:w-64 mx-auto mb-8"
           />
 
           {/* TOP TEXT */}
@@ -31,23 +31,35 @@ export default function Home() {
             STREETWEAR • GEN-Z • PREMIUM
           </p>
 
-          {/* MAIN HEADING */}
-          <h1 className="text-4xl md:text-7xl font-black uppercase leading-tight">
-            DRIP THAT
-            <br />
-            SPEAKS LOUDER
+          {/* BRAND NAME */}
+          <h1 className="text-5xl md:text-8xl font-black uppercase leading-tight">
+
+            <span className="text-white">
+              Jain
+            </span>
+
+            <span className="text-yellow-400 drop-shadow-[0_0_25px_rgba(250,204,21,0.8)]">
+              ZEra
+            </span>
+
           </h1>
 
+          {/* TAGLINE */}
+          <p className="mt-6 text-2xl md:text-4xl font-bold uppercase tracking-wide">
+            DRIP THAT SPEAKS LOUDER 🔥
+          </p>
+
           {/* DESCRIPTION */}
-          <p className="mt-6 text-gray-300 text-base md:text-lg leading-relaxed">
+          <p className="mt-8 text-gray-300 text-base md:text-lg leading-relaxed">
             Kab tak Sarojini jaoge? 😭
             <br />
             Ab ghar baithe hype bano 😎
           </p>
 
           {/* BUTTONS */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
+          <div className="flex flex-col md:flex-row gap-4 justify-center mt-10">
 
+            {/* INSTAGRAM */}
             <a
               href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
               target="_blank"
@@ -56,8 +68,9 @@ export default function Home() {
               Shop On Instagram
             </a>
 
+            {/* WHATSAPP */}
             <a
-              href="https://wa.me/917746947374"
+              href="https://wa.me/918358025165?text=Yo%20JainZEra%20🔥%20I%20want%20to%20order%20from%20your%20store.%20Please%20share%20more%20details%20😎"
               target="_blank"
               className="bg-white text-black px-8 py-4 uppercase text-sm tracking-widest hover:bg-gray-300 transition rounded-xl"
             >
@@ -85,11 +98,14 @@ export default function Home() {
           </h2>
 
           <p className="mt-5 text-gray-300 text-base md:text-lg leading-relaxed">
-            Sarojini wali vibe.
+
+            Kab tak Sarojini ki bheed me dhakke khaoge? 😭
             <br />
-            Online wali convenience.
+            Ab AC me baith ke drip order karo 😎
             <br />
-            JainZEra wali drip 🔥
+            JainZEra la raha hai streetwear vibes
+            directly tumhare ghar 🚚🔥
+
           </p>
 
         </div>
@@ -110,19 +126,20 @@ export default function Home() {
 
         </div>
 
-        {/* PRODUCT CARD */}
+        {/* PRODUCT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
+          {/* PRODUCT CARD */}
           <a
             href="/products/aesthetic-flower-tees"
-            className="block group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 p-6 hover:border-white transition"
+            className="block group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 p-6 hover:border-yellow-400 transition duration-500"
           >
 
             {/* IMAGE */}
             <img
               src="/products/tees/flower1.jpg"
               alt="Aesthetic Flower Tees"
-              className="w-full h-[420px] object-contain bg-black rounded-2xl"
+              className="w-full h-[420px] object-contain bg-black rounded-2xl group-hover:scale-105 transition duration-500"
             />
 
             {/* DETAILS */}
@@ -150,7 +167,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
-        © 2026 JainZEra — Built For The Culture
+        © 2026 JainZEra — Built For The Culture 🔥
       </footer>
 
     </main>

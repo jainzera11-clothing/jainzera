@@ -33,28 +33,77 @@ export default function Home() {
           alt=""
         />
 
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 text-center px-6">
-          <p className="uppercase tracking-[8px] text-sm text-gray-300 mb-4">
+          {/* LOGO */}
+          <img
+            src="/logo.png"
+            alt="JainZEra Logo"
+            className="w-[220px] md:w-[320px] mx-auto"
+          />
+
+          <p className="uppercase tracking-[8px] text-sm text-gray-300 mt-6 mb-4">
             Streetwear 2026
           </p>
 
-          <h1 className="text-6xl md:text-8xl font-black uppercase leading-none">
-            JainZEra
+          <h1 className="text-5xl md:text-7xl font-black uppercase leading-none">
+            NOT FOR EVERYONE
           </h1>
 
           <p className="mt-6 text-gray-300 max-w-xl mx-auto text-lg">
-            Built for the new generation of street culture.
+            Premium Quality. Limited Drops.
+            <br />
+            Built for the new generation.
           </p>
 
           <a
-            href="https://ig.me/m/jainzera"
+            href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
             target="_blank"
             className="inline-block mt-8 border border-white px-8 py-4 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300"
           >
             Shop The Drop
           </a>
+
+          {/* CONTACT INFO */}
+          <div className="mt-10 space-y-3 text-gray-300">
+            <p className="text-lg">
+              📦 Free Pan India Delivery
+            </p>
+
+            <p>
+              📲 WhatsApp Orders:
+              <br />
+              7746947374
+              <br />
+              8358025165
+            </p>
+
+            <a
+              href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
+              target="_blank"
+              className="inline-block underline hover:text-white"
+            >
+              @jainzera
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FUNNY SECTION */}
+      <section className="px-6 md:px-16 py-10">
+        <div className="border border-white/10 bg-zinc-900 rounded-3xl p-8 text-center">
+          <h2 className="text-3xl md:text-5xl font-black uppercase">
+            Kab Tak Sarojini Jaoge? 😭
+          </h2>
+
+          <p className="mt-6 text-gray-300 text-lg leading-relaxed">
+            Ab lo online Sarojini wali maze ghar se 😎
+            <br />
+            AC me baith ke shopping kro.
+            <br />
+            Free Pan India Delivery 🚚
+          </p>
         </div>
       </section>
 
@@ -96,7 +145,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href="https://ig.me/m/jainzera"
+                  href="https://wa.me/917746947374"
                   target="_blank"
                   className="border border-white px-5 py-2 text-sm uppercase hover:bg-white hover:text-black transition"
                 >

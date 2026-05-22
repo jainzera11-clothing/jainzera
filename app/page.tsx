@@ -153,7 +153,7 @@ export default function Home() {
                     key={index}
                     src={img}
                     alt={product.name}
-                    className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 transition duration-500"
+                    className="w-full h-[320px] object-contain bg-black rounded-2xl hover:scale-105 transition duration-500"
                   />
 
                 ))}

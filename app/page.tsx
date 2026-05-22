@@ -1,38 +1,14 @@
 export default function Home() {
 
-  const products = [
-    {
-      id: 1,
-      name: "Aesthetic Flower Tees",
-      price: "₹399",
-
-      images: [
-        "/flower1.jpg",
-        "/flower2.jpg",
-        "/flower3.jpg",
-        "/flower4.jpg",
-        "/flower5.jpg",
-      ],
-
-      sizes: "M to L",
-
-      reel:
-        "https://www.instagram.com/reel/DYmRAx0xd5k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-
-      description:
-        "For the people who think basic is boring 🌸",
-    },
-  ];
-
   return (
     <main className="bg-black text-white min-h-screen overflow-x-hidden">
 
       {/* HERO SECTION */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
-        {/* HERO IMAGE */}
+        {/* BACKGROUND */}
         <img
-          src="/flower1.jpg"
+          src="/products/tees/flower1.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
@@ -40,7 +16,7 @@ export default function Home() {
         {/* OVERLAY */}
         <div className="absolute inset-0 bg-black/70" />
 
-        {/* HERO CONTENT */}
+        {/* CONTENT */}
         <div className="relative z-10 text-center px-6 max-w-3xl">
 
           {/* LOGO */}
@@ -50,7 +26,7 @@ export default function Home() {
             className="w-44 md:w-60 mx-auto mb-8"
           />
 
-          {/* SMALL TEXT */}
+          {/* TOP TEXT */}
           <p className="uppercase tracking-[6px] text-gray-300 text-xs md:text-sm mb-6">
             STREETWEAR • GEN-Z • PREMIUM
           </p>
@@ -119,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRODUCTS */}
+      {/* PRODUCTS SECTION */}
       <section className="px-6 md:px-14 py-16">
 
         <div className="flex items-center justify-between mb-10">
@@ -135,85 +111,38 @@ export default function Home() {
         </div>
 
         {/* PRODUCT CARD */}
-        <div className="grid grid-cols-1 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-          {products.map((product) => (
+          <a
+            href="/products/aesthetic-flower-tees"
+            className="block group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 p-6 hover:border-white transition"
+          >
 
-            <div
-              key={product.id}
-              className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 p-6"
-            >
+            {/* IMAGE */}
+            <img
+              src="/products/tees/flower1.jpg"
+              alt="Aesthetic Flower Tees"
+              className="w-full h-[420px] object-contain bg-black rounded-2xl"
+            />
 
-              {/* IMAGE GRID */}
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* DETAILS */}
+            <div className="mt-6">
 
-                {product.images.map((img, index) => (
+              <h2 className="text-3xl font-black uppercase">
+                Aesthetic Flower Tees
+              </h2>
 
-                  <img
-                    key={index}
-                    src={img}
-                    alt={product.name}
-                    className="w-full h-[320px] object-contain bg-black rounded-2xl hover:scale-105 transition duration-500"
-                  />
+              <p className="text-gray-400 mt-2 text-lg">
+                ₹399
+              </p>
 
-                ))}
-
-              </div>
-
-              {/* PRODUCT DETAILS */}
-              <div className="mt-8">
-
-                <h3 className="text-3xl md:text-5xl font-black uppercase">
-                  {product.name}
-                </h3>
-
-                <p className="text-gray-400 mt-4 text-lg">
-                  {product.description}
-                </p>
-
-                {/* DETAILS */}
-                <div className="mt-6 space-y-3 text-gray-300">
-
-                  <p className="text-xl">
-                    💸 Price: {product.price}
-                  </p>
-
-                  <p className="text-lg">
-                    📏 Sizes: {product.sizes}
-                  </p>
-
-                  <p className="text-lg">
-                    🚚 Free Pan India Delivery
-                  </p>
-
-                </div>
-
-                {/* BUTTONS */}
-                <div className="flex flex-col md:flex-row gap-4 mt-10">
-
-                  <a
-                    href="https://wa.me/917746947374"
-                    target="_blank"
-                    className="flex-1 bg-white text-black text-center py-4 uppercase text-sm tracking-widest hover:bg-gray-300 transition rounded-xl"
-                  >
-                    Order Now
-                  </a>
-
-                  <a
-                    href={product.reel}
-                    target="_blank"
-                    className="flex-1 border border-white text-center py-4 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition rounded-xl"
-                  >
-                    Watch Reel
-                  </a>
-
-                </div>
-
-              </div>
+              <p className="mt-4 text-gray-300">
+                Click to view full product →
+              </p>
 
             </div>
 
-          ))}
+          </a>
 
         </div>
 

@@ -4,7 +4,7 @@ export default function Home() {
     <main className="bg-black text-white min-h-screen overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
         {/* BACKGROUND */}
         <img
@@ -23,7 +23,7 @@ export default function Home() {
           <img
             src="/logo.png"
             alt="JainZEra"
-            className="w-52 md:w-72 mx-auto mb-10"
+            className="w-32 sm:w-40 md:w-72 mx-auto mb-8 object-contain"
           />
 
           {/* TOP TEXT */}

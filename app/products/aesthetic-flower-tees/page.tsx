@@ -32,17 +32,6 @@ export default function ProductPage() {
               className="relative bg-white rounded-[30px] overflow-hidden shadow-lg"
             >
 
-              {/* SOLD OUT TAG */}
-              {(index === 2) && (
-
-                <div className="absolute top-4 left-4 z-10 bg-[#4d3b31] text-white px-5 py-2 rounded-full text-sm uppercase tracking-widest font-semibold shadow-lg">
-
-                  Sold Out
-
-                </div>
-
-              )}
-
               {/* IMAGE */}
               <img
                 src={img}
@@ -62,13 +51,13 @@ export default function ProductPage() {
                   Order On WhatsApp
                 </a>
 
-                {/* INSTAGRAM */}
+                {/* INSTAGRAM DM */}
                 <a
-                  href="https://www.instagram.com/reel/DYmRAx0xd5k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
                   target="_blank"
                   className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
                 >
-                  Watch Reel
+                  DM On Instagram
                 </a>
 
               </div>

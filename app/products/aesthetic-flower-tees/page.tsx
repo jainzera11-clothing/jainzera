@@ -9,12 +9,12 @@ export default function ProductPage() {
   ];
 
   return (
-    <main className="bg-black text-white min-h-screen px-6 md:px-16 py-10">
+    <main className="bg-[#f7f1eb] text-[#3f3128] min-h-screen px-6 md:px-16 py-10">
 
       {/* BACK BUTTON */}
       <a
         href="/"
-        className="text-gray-400 hover:text-white uppercase text-sm tracking-widest"
+        className="text-[#7c685b] hover:text-[#4d3b31] uppercase text-sm tracking-widest"
       >
         ← Back To Home
       </a>
@@ -31,54 +31,45 @@ export default function ProductPage() {
               key={index}
               src={img}
               alt="Aesthetic Flower Tee"
-              className="w-full h-[300px] object-contain bg-zinc-900 rounded-2xl hover:scale-105 transition duration-500"
+              className="w-full h-[300px] object-contain bg-white rounded-3xl hover:scale-105 transition duration-500"
             />
 
           ))}
 
         </div>
 
-        {/* PRODUCT DETAILS */}
+        {/* DETAILS */}
         <div className="flex flex-col justify-center">
 
-          <p className="uppercase tracking-[5px] text-gray-400 text-sm">
-            JainZEra Streetwear
+          <p className="uppercase tracking-[5px] text-[#8d7768] text-sm">
+            JainZEra Collection
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-black uppercase mt-4">
+          <h1 className="text-5xl md:text-7xl font-serif italic mt-4 text-[#4d3b31]">
             Aesthetic Flower Tees
           </h1>
 
-          <p className="text-3xl mt-6 font-semibold">
+          <p className="text-4xl mt-6 font-bold text-[#7c685b]">
             ₹399
           </p>
 
-          <p className="mt-6 text-gray-300 text-lg leading-relaxed">
-            For the people who think basic is boring 🌸
-            <br />
-            Designed for daily drip.
-            <br />
-            Soft feel. Heavy vibe 😎
-          </p>
+          <div className="mt-8 text-[#5e4a3e] text-xl leading-relaxed space-y-4">
 
-          {/* SIZE */}
-          <div className="mt-8">
+            <p>
+              Soft aesthetic tees made for your everyday pretty vibes ✨
+            </p>
 
-            <h2 className="uppercase text-sm tracking-widest text-gray-400 mb-4">
-              Available Sizes
-            </h2>
+            <p>
+              🚚 Free Delivery PAN India
+            </p>
 
-            <div className="flex gap-4">
+            <p>
+              Cute, comfy & perfect for your daily outfit mood 💖
+            </p>
 
-              <div className="border border-white px-5 py-3 rounded-xl">
-                M
-              </div>
-
-              <div className="border border-white px-5 py-3 rounded-xl">
-                L
-              </div>
-
-            </div>
+            <p>
+              Limited pieces available 🌸
+            </p>
 
           </div>
 
@@ -86,9 +77,9 @@ export default function ProductPage() {
           <div className="flex flex-col md:flex-row gap-4 mt-10">
 
             <a
-              href="https://wa.me/917746947374"
+              href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Aesthetic%20Flower%20Tees.%20Please%20share%20more%20details%20💖"
               target="_blank"
-              className="flex-1 bg-white text-black text-center py-4 uppercase text-sm tracking-widest hover:bg-gray-300 transition rounded-xl"
+              className="flex-1 bg-[#4d3b31] text-white text-center py-5 uppercase text-lg tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
             >
               Order On WhatsApp
             </a>
@@ -96,26 +87,10 @@ export default function ProductPage() {
             <a
               href="https://www.instagram.com/reel/DYmRAx0xd5k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
               target="_blank"
-              className="flex-1 border border-white text-center py-4 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition rounded-xl"
+              className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-5 uppercase text-lg tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
             >
               Watch Reel
             </a>
-
-          </div>
-
-          {/* FUNNY MESSAGE */}
-          <div className="mt-10 bg-zinc-900 border border-white/10 rounded-2xl p-6">
-
-            <h2 className="text-2xl font-black uppercase">
-              Kab Tak Sarojini Jaoge? 😭
-            </h2>
-
-            <p className="mt-4 text-gray-300 leading-relaxed">
-              Ab AC me baith ke shopping karo 😎
-              <br />
-              JainZEra la raha hai streetwear vibes
-              directly tumhare ghar 🚚
-            </p>
 
           </div>
 

@@ -74,6 +74,11 @@ export default function KurtiPage() {
               so hurry — first come, first serve 🛍️
             </p>
 
+            <p>
+              Follow @jainzera for more classy
+              and affordable fashion finds 🌸
+            </p>
+
           </div>
 
           {/* BUTTONS */}

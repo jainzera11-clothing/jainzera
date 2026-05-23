@@ -171,6 +171,42 @@ export default function Home() {
 
       </section>
 
+       {/* BACK DORI KURTI CARD */}
+<a
+  href="/products/back-dori-kurtis"
+  className="block group bg-white/70 backdrop-blur-sm rounded-[40px] overflow-hidden border border-[#e4d7cb] p-6 hover:shadow-2xl transition duration-500"
+>
+
+  {/* MAIN IMAGE */}
+  <img
+    src="/products/back-dori/dori.jpeg"
+    alt="Back Dori Kurtis"
+    className="w-full h-[500px] object-contain bg-[#f4ece5] rounded-3xl group-hover:scale-105 transition duration-500"
+  />
+
+  {/* DETAILS */}
+  <div className="mt-8">
+
+    <h2 className="text-4xl md:text-5xl font-serif italic text-[#4d3b31]">
+      Back Dori Kurtis
+    </h2>
+
+    <p className="text-[#7c685b] mt-4 text-2xl font-semibold">
+      ₹300
+    </p>
+
+    <p className="mt-5 text-[#5e4a3e] text-lg">
+      Soft summer ethnic vibes ✨
+    </p>
+
+    <p className="mt-2 text-[#7c685b] text-base">
+      Click to explore collection →
+    </p>
+
+  </div>
+
+</a>
+
       {/* LOYALTY SECTION */}
       <section className="px-6 md:px-16 pb-20">
 

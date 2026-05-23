@@ -2,23 +2,23 @@ export default function ProductPage() {
 
   const products = [
     {
-      image: "/products/tees/flower1.jpeg",
+      image: "/products/tees/flower1.jpg",
       color: "Mauve",
     },
     {
-      image: "/products/tees/flower2.jpeg",
+      image: "/products/tees/flower2.jpg",
       color: "Vibrant Mustard Yellow",
     },
     {
-      image: "/products/tees/flower3.jpeg",
+      image: "/products/tees/flower3.jpg",
       color: "Light Pink",
     },
     {
-      image: "/products/tees/flower4.jpeg",
+      image: "/products/tees/flower4.jpg",
       color: "Black",
     },
     {
-      image: "/products/tees/flower5.jpeg",
+      image: "/products/tees/flower5.jpg",
       color: "Brown",
     },
   ];

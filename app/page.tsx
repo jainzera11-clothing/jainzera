@@ -108,7 +108,7 @@ export default function Home() {
           >
 
             <img
-              src="/products/tees/flower1.jpg"
+              src="/products/tees/flower.jpg"
               alt="Aesthetic Flower Tees"
               className="w-full h-[500px] object-contain bg-[#f4ece5] rounded-3xl group-hover:scale-105 transition duration-500"
             />

@@ -41,11 +41,12 @@ export default function Home() {
           {/* FUNNY MESSAGE */}
           <p className="mt-8 text-lg md:text-2xl leading-relaxed text-[#5e4a3e] font-medium">
 
-            Kab tak Sarojini ki bheed me dhakke khaoge? 😭
-            <br />
-            Ab ghar baithe classy shopping karo 😌
-            <br />
-            JainZEra la raha hai boutique vibes directly tumhare ghar ✨
+            Not just fashion —
+a whole mood ✨
+<br />
+Soft fits. Pretty vibes.
+<br />
+JainZEra made for your era 🤍
 
           </p>
 

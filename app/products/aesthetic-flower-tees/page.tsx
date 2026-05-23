@@ -1,11 +1,11 @@
 export default function ProductPage() {
 
   const images = [
-    "/products/tees/flower1.jpg",
-    "/products/tees/flower2.jpg",
-    "/products/tees/flower3.jpg",
-    "/products/tees/flower4.jpg",
-    "/products/tees/flower5.jpg",
+    "/products/tees/flower1.jpeg",
+    "/products/tees/flower2.jpeg",
+    "/products/tees/flower3.jpeg",
+    "/products/tees/flower4.jpeg",
+    "/products/tees/flower5.jpeg",
   ];
 
   return (
@@ -20,32 +20,73 @@ export default function ProductPage() {
       </a>
 
       {/* PRODUCT SECTION */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
 
-        {/* IMAGES */}
-        <div className="grid grid-cols-2 gap-4">
+        {/* LEFT SIDE IMAGES */}
+        <div className="space-y-10">
 
           {images.map((img, index) => (
 
-            <img
+            <div
               key={index}
-              src={img}
-              alt="Aesthetic Flower Tee"
-              className="w-full h-[300px] object-contain bg-white rounded-3xl hover:scale-105 transition duration-500"
-            />
+              className="relative bg-white rounded-[30px] overflow-hidden shadow-lg"
+            >
+
+              {/* SOLD OUT TAG */}
+              {(index === 2) && (
+
+                <div className="absolute top-4 left-4 z-10 bg-[#4d3b31] text-white px-5 py-2 rounded-full text-sm uppercase tracking-widest font-semibold shadow-lg">
+
+                  Sold Out
+
+                </div>
+
+              )}
+
+              {/* IMAGE */}
+              <img
+                src={img}
+                alt="Aesthetic Flower Tee"
+                className="w-full object-cover"
+              />
+
+              {/* BUTTONS BELOW EVERY IMAGE */}
+              <div className="p-6 flex flex-col md:flex-row gap-4">
+
+                {/* WHATSAPP */}
+                <a
+                  href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Aesthetic%20Flower%20Tees.%20Please%20share%20more%20details%20💖"
+                  target="_blank"
+                  className="flex-1 bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
+                >
+                  Order On WhatsApp
+                </a>
+
+                {/* INSTAGRAM */}
+                <a
+                  href="https://www.instagram.com/reel/DYmRAx0xd5k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  target="_blank"
+                  className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
+                >
+                  Watch Reel
+                </a>
+
+              </div>
+
+            </div>
 
           ))}
 
         </div>
 
-        {/* DETAILS */}
-        <div className="flex flex-col justify-center">
+        {/* RIGHT SIDE DETAILS */}
+        <div className="flex flex-col justify-start sticky top-10 h-fit">
 
           <p className="uppercase tracking-[5px] text-[#8d7768] text-sm">
             JainZEra Collection
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-serif italic mt-4 text-[#4d3b31]">
+          <h1 className="text-5xl md:text-7xl font-serif italic mt-4 text-[#4d3b31] leading-tight">
             Aesthetic Flower Tees
           </h1>
 
@@ -53,7 +94,8 @@ export default function ProductPage() {
             ₹399
           </p>
 
-          <div className="mt-8 text-[#5e4a3e] text-xl leading-relaxed space-y-4">
+          {/* DESCRIPTION */}
+          <div className="mt-8 text-[#5e4a3e] text-xl leading-relaxed space-y-5">
 
             <p>
               Soft aesthetic tees made for your everyday pretty vibes ✨
@@ -68,29 +110,29 @@ export default function ProductPage() {
             </p>
 
             <p>
+              Pair it with cargos, denims or oversized fits
+              for the ultimate Pinterest aesthetic ✨
+            </p>
+
+            <p>
               Limited pieces available 🌸
             </p>
 
           </div>
 
-          {/* BUTTONS */}
-          <div className="flex flex-col md:flex-row gap-4 mt-10">
+          {/* EXTRA MESSAGE */}
+          <div className="mt-10 bg-white rounded-[30px] p-8 border border-[#eadfd5] shadow-md">
 
-            <a
-              href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Aesthetic%20Flower%20Tees.%20Please%20share%20more%20details%20💖"
-              target="_blank"
-              className="flex-1 bg-[#4d3b31] text-white text-center py-5 uppercase text-lg tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
-            >
-              Order On WhatsApp
-            </a>
+            <h2 className="text-3xl font-serif italic text-[#4d3b31] leading-snug">
+              Not just fashion —
+              a whole mood ✨
+            </h2>
 
-            <a
-              href="https://www.instagram.com/reel/DYmRAx0xd5k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              target="_blank"
-              className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-5 uppercase text-lg tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
-            >
-              Watch Reel
-            </a>
+            <p className="mt-4 text-[#6d5747] text-lg leading-relaxed">
+              Soft fits.
+              Pretty vibes.
+              JainZEra made for your era 🤍
+            </p>
 
           </div>
 

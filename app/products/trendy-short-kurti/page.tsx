@@ -1,11 +1,26 @@
 export default function KurtiPage() {
 
-  const images = [
-    "/products/kurti/kurti1.jpg",
-    "/products/kurti/kurti2.jpg",
-    "/products/kurti/kurti3.jpg",
-    "/products/kurti/kurti4.jpg",
-    "/products/kurti/kurti5.jpg",
+  const products = [
+    {
+      image: "/products/kurti/kurti1.jpg",
+      color: "Blue and White",
+    },
+    {
+      image: "/products/kurti/kurti2.jpg",
+      color: "Mustard Yellow",
+    },
+    {
+      image: "/products/kurti/kurti3.jpg",
+      color: "White Base with Floral Print",
+    },
+    {
+      image: "/products/kurti/kurti4.jpg",
+      color: "Deep Maroon Base with White Floral Print",
+    },
+    {
+      image: "/products/kurti/kurti5.jpg",
+      color: "Olive Green with White Floral Print",
+    },
   ];
 
   return (
@@ -25,7 +40,7 @@ export default function KurtiPage() {
         {/* LEFT SIDE IMAGES */}
         <div className="space-y-10">
 
-          {images.map((img, index) => (
+          {products.map((product, index) => (
 
             <div
               key={index}
@@ -45,30 +60,48 @@ export default function KurtiPage() {
 
               {/* IMAGE */}
               <img
-                src={img}
-                alt="Trendy Short Kurti"
+                src={product.image}
+                alt={product.color}
                 className="w-full object-cover"
               />
 
-              {/* IMAGE ACTIONS */}
-              <div className="p-6 flex flex-col md:flex-row gap-4">
+              {/* COLOR NAME */}
+              <div className="px-6 pt-6">
+
+                <h2 className="text-2xl md:text-3xl font-serif italic text-[#4d3b31] leading-snug">
+                  {product.color}
+                </h2>
+
+              </div>
+
+              {/* BUTTONS */}
+              <div className="p-6 flex flex-col gap-4">
 
                 {/* WHATSAPP */}
                 <a
-                  href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20this%20kurti.%20Please%20share%20more%20details%20💖"
+                  href={`https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Trendy%20Short%20Kurti%20in%20${encodeURIComponent(product.color)}%20💖`}
                   target="_blank"
-                  className="flex-1 bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
+                  className="bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
                 >
                   Order On WhatsApp
                 </a>
 
-                {/* INSTAGRAM */}
+                {/* INSTAGRAM DM */}
                 <a
                   href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
                   target="_blank"
-                  className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
+                  className="border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
                 >
                   DM On Instagram
+                </a>
+
+                {/* WATCH REEL */}
+                <a
+                  href="https://www.instagram.com/reel/DYR8JZxRUEc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  target="_blank"
+                  className="bg-[#e8d9cc] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#d8c2b1] transition rounded-full font-semibold"
+                >
+                  Watch Reel ✨
                 </a>
 
               </div>
@@ -117,8 +150,10 @@ export default function KurtiPage() {
             </p>
 
             <p>
-              Follow @jainzera for more classy
-              and affordable fashion finds 🌸
+              Available Colors:
+              Blue & White, Mustard Yellow,
+              Floral White, Deep Maroon &
+              Olive Green 🌸
             </p>
 
           </div>
@@ -127,13 +162,12 @@ export default function KurtiPage() {
           <div className="mt-10 bg-white rounded-[30px] p-8 border border-[#eadfd5] shadow-md">
 
             <h2 className="text-3xl font-serif italic text-[#4d3b31] leading-snug">
-              Not just fashion —
-              a whole mood ✨
+              Soft summer ethnic vibes ✨
             </h2>
 
             <p className="mt-4 text-[#6d5747] text-lg leading-relaxed">
-              Soft fits.
-              Pretty vibes.
+              Elegant fits.
+              Pretty details.
               JainZEra made for your era 🤍
             </p>
 

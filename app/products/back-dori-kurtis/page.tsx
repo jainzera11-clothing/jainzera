@@ -1,12 +1,30 @@
 export default function BackDoriPage() {
 
-  const images = [
-    "/products/back-dori/dori1.jpeg",
-    "/products/back-dori/dori2.jpeg",
-    "/products/back-dori/dori3.jpeg",
-    "/products/back-dori/dori4.jpeg",
-    "/products/back-dori/dori5.jpeg",
-    "/products/back-dori/dori6.jpeg",
+  const products = [
+    {
+      image: "/products/back-dori/dori1.jpeg",
+      color: "Mustard Yellow",
+    },
+    {
+      image: "/products/back-dori/dori2.jpeg",
+      color: "Lovely Shade of Pink",
+    },
+    {
+      image: "/products/back-dori/dori3.jpeg",
+      color: "Vibrant Magenta",
+    },
+    {
+      image: "/products/back-dori/dori4.jpeg",
+      color: "Beige and Sand Base",
+    },
+    {
+      image: "/products/back-dori/dori5.jpeg",
+      color: "Rich Navy Blue",
+    },
+    {
+      image: "/products/back-dori/dori6.jpeg",
+      color: "Lovely Blue and White with Ikat Pattern",
+    },
   ];
 
   return (
@@ -26,7 +44,7 @@ export default function BackDoriPage() {
         {/* LEFT SIDE IMAGES */}
         <div className="space-y-10">
 
-          {images.map((img, index) => (
+          {products.map((product, index) => (
 
             <div
               key={index}
@@ -46,30 +64,48 @@ export default function BackDoriPage() {
 
               {/* IMAGE */}
               <img
-                src={img}
-                alt="Back Dori Kurti"
+                src={product.image}
+                alt={product.color}
                 className="w-full object-cover"
               />
 
-              {/* BUTTONS BELOW EVERY IMAGE */}
-              <div className="p-6 flex flex-col md:flex-row gap-4">
+              {/* COLOR NAME */}
+              <div className="px-6 pt-6">
+
+                <h2 className="text-2xl md:text-3xl font-serif italic text-[#4d3b31] leading-snug">
+                  {product.color}
+                </h2>
+
+              </div>
+
+              {/* BUTTONS */}
+              <div className="p-6 flex flex-col gap-4">
 
                 {/* WHATSAPP */}
                 <a
-                  href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Back%20Dori%20Kurti.%20Please%20share%20more%20details%20💖"
+                  href={`https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Back%20Dori%20Kurti%20in%20${encodeURIComponent(product.color)}%20💖`}
                   target="_blank"
-                  className="flex-1 bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
+                  className="bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
                 >
                   Order On WhatsApp
                 </a>
 
-                {/* INSTAGRAM */}
+                {/* INSTAGRAM DM */}
                 <a
                   href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
                   target="_blank"
-                  className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
+                  className="border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
                 >
                   DM On Instagram
+                </a>
+
+                {/* WATCH REEL */}
+                <a
+                  href="https://www.instagram.com/reel/DYef_IFRHmo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  target="_blank"
+                  className="bg-[#e8d9cc] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#d8c2b1] transition rounded-full font-semibold"
+                >
+                  Watch Reel ✨
                 </a>
 
               </div>
@@ -127,7 +163,10 @@ export default function BackDoriPage() {
             </p>
 
             <p>
-              DM us on @jainzera to place your order 💌
+              Available Colors:
+              Mustard Yellow, Pink,
+              Magenta, Beige Sand,
+              Navy Blue & Ikat Blue White ✨
             </p>
 
           </div>

@@ -22,8 +22,8 @@ export default function KurtiPage() {
       {/* PRODUCT SECTION */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
 
-        {/* IMAGES */}
-        <div className="space-y-6">
+        {/* LEFT SIDE IMAGES */}
+        <div className="space-y-10">
 
           {images.map((img, index) => (
 
@@ -50,13 +50,36 @@ export default function KurtiPage() {
                 className="w-full object-cover"
               />
 
+              {/* IMAGE ACTIONS */}
+              <div className="p-6 flex flex-col md:flex-row gap-4">
+
+                {/* WHATSAPP */}
+                <a
+                  href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20this%20kurti.%20Please%20share%20more%20details%20💖"
+                  target="_blank"
+                  className="flex-1 bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
+                >
+                  Order On WhatsApp
+                </a>
+
+                {/* INSTAGRAM */}
+                <a
+                  href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
+                  target="_blank"
+                  className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
+                >
+                  DM On Instagram
+                </a>
+
+              </div>
+
             </div>
 
           ))}
 
         </div>
 
-        {/* DETAILS */}
+        {/* RIGHT SIDE DETAILS */}
         <div className="flex flex-col justify-start sticky top-10 h-fit">
 
           <p className="uppercase tracking-[5px] text-[#8d7768] text-sm">
@@ -97,29 +120,6 @@ export default function KurtiPage() {
               Follow @jainzera for more classy
               and affordable fashion finds 🌸
             </p>
-
-          </div>
-
-          {/* BUTTONS */}
-          <div className="flex flex-col gap-4 mt-10">
-
-            {/* WHATSAPP */}
-            <a
-              href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Trendy%20Short%20Kurti.%20Please%20share%20more%20details%20💖"
-              target="_blank"
-              className="bg-[#4d3b31] text-white text-center py-5 uppercase text-lg tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
-            >
-              Order On WhatsApp
-            </a>
-
-            {/* INSTAGRAM */}
-            <a
-              href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
-              target="_blank"
-              className="border border-[#4d3b31] text-[#4d3b31] text-center py-5 uppercase text-lg tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
-            >
-              DM On Instagram
-            </a>
 
           </div>
 

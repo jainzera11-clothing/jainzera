@@ -38,15 +38,15 @@ export default function Home() {
             you are stepping into your own era ✨
           </p>
 
-          {/* FUNNY MESSAGE */}
+          {/* FUN MESSAGE */}
           <p className="mt-8 text-lg md:text-2xl leading-relaxed text-[#5e4a3e] font-medium">
 
             Not just fashion —
-a whole mood ✨
-<br />
-Soft fits. Pretty vibes.
-<br />
-JainZEra made for your era 🤍
+            a whole mood ✨
+            <br />
+            Soft fits. Pretty vibes.
+            <br />
+            JainZEra made for your era 🤍
 
           </p>
 
@@ -101,20 +101,18 @@ JainZEra made for your era 🤍
         {/* PRODUCT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-          {/* PRODUCT CARD */}
+          {/* FLOWER TEE CARD */}
           <a
             href="/products/aesthetic-flower-tees"
             className="block group bg-white/70 backdrop-blur-sm rounded-[40px] overflow-hidden border border-[#e4d7cb] p-6 hover:shadow-2xl transition duration-500"
           >
 
-            {/* IMAGE */}
             <img
               src="/products/tees/flower1.jpg"
               alt="Aesthetic Flower Tees"
               className="w-full h-[500px] object-contain bg-[#f4ece5] rounded-3xl group-hover:scale-105 transition duration-500"
             />
 
-            {/* DETAILS */}
             <div className="mt-8">
 
               <h2 className="text-4xl md:text-5xl font-serif italic text-[#4d3b31]">
@@ -127,6 +125,42 @@ JainZEra made for your era 🤍
 
               <p className="mt-5 text-[#5e4a3e] text-lg">
                 Click to explore the full collection →
+              </p>
+
+            </div>
+
+          </a>
+
+          {/* KURTI CARD */}
+          <a
+            href="/products/trendy-short-kurti"
+            className="block group bg-white/70 backdrop-blur-sm rounded-[40px] overflow-hidden border border-[#e4d7cb] p-6 hover:shadow-2xl transition duration-500"
+          >
+
+            {/* MAIN IMAGE */}
+            <img
+              src="/products/kurti/kurti.jpg"
+              alt="Trendy Short Kurti"
+              className="w-full h-[500px] object-contain bg-[#f4ece5] rounded-3xl group-hover:scale-105 transition duration-500"
+            />
+
+            {/* DETAILS */}
+            <div className="mt-8">
+
+              <h2 className="text-4xl md:text-5xl font-serif italic text-[#4d3b31]">
+                Trendy Short Kurtis
+              </h2>
+
+              <p className="text-[#7c685b] mt-4 text-2xl font-semibold">
+                ₹199
+              </p>
+
+              <p className="mt-5 text-[#5e4a3e] text-lg">
+                1st, 3rd & 6th already sold out ✨
+              </p>
+
+              <p className="mt-2 text-[#7c685b] text-base">
+                Click to explore collection →
               </p>
 
             </div>

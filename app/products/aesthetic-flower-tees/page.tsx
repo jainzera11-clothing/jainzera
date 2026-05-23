@@ -40,13 +40,13 @@ export default function ProductPage() {
               />
 
               {/* BUTTONS BELOW EVERY IMAGE */}
-              <div className="p-6 flex flex-col md:flex-row gap-4">
+              <div className="p-6 flex flex-col gap-4">
 
                 {/* WHATSAPP */}
                 <a
                   href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Aesthetic%20Flower%20Tees.%20Please%20share%20more%20details%20💖"
                   target="_blank"
-                  className="flex-1 bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
+                  className="bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
                 >
                   Order On WhatsApp
                 </a>
@@ -55,9 +55,18 @@ export default function ProductPage() {
                 <a
                   href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
                   target="_blank"
-                  className="flex-1 border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
+                  className="border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
                 >
                   DM On Instagram
+                </a>
+
+                {/* WATCH REEL */}
+                <a
+                  href="https://www.instagram.com/reel/DYmRAx0xd5k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  target="_blank"
+                  className="bg-[#e8d9cc] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#d8c2b1] transition rounded-full font-semibold"
+                >
+                  Watch Reel ✨
                 </a>
 
               </div>

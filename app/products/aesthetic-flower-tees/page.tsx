@@ -1,11 +1,26 @@
 export default function ProductPage() {
 
-  const images = [
-    "/products/tees/flower1.jpeg",
-    "/products/tees/flower2.jpeg",
-    "/products/tees/flower3.jpeg",
-    "/products/tees/flower4.jpeg",
-    "/products/tees/flower5.jpeg",
+  const products = [
+    {
+      image: "/products/tees/flower1.jpeg",
+      color: "Mauve",
+    },
+    {
+      image: "/products/tees/flower2.jpeg",
+      color: "Vibrant Mustard Yellow",
+    },
+    {
+      image: "/products/tees/flower3.jpeg",
+      color: "Light Pink",
+    },
+    {
+      image: "/products/tees/flower4.jpeg",
+      color: "Black",
+    },
+    {
+      image: "/products/tees/flower5.jpeg",
+      color: "Brown",
+    },
   ];
 
   return (
@@ -25,7 +40,7 @@ export default function ProductPage() {
         {/* LEFT SIDE IMAGES */}
         <div className="space-y-10">
 
-          {images.map((img, index) => (
+          {products.map((product, index) => (
 
             <div
               key={index}
@@ -34,17 +49,26 @@ export default function ProductPage() {
 
               {/* IMAGE */}
               <img
-                src={img}
-                alt="Aesthetic Flower Tee"
+                src={product.image}
+                alt={product.color}
                 className="w-full object-cover"
               />
 
-              {/* BUTTONS BELOW EVERY IMAGE */}
+              {/* COLOR NAME */}
+              <div className="px-6 pt-6">
+
+                <h2 className="text-2xl md:text-3xl font-serif italic text-[#4d3b31]">
+                  {product.color}
+                </h2>
+
+              </div>
+
+              {/* BUTTONS */}
               <div className="p-6 flex flex-col gap-4">
 
                 {/* WHATSAPP */}
                 <a
-                  href="https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Aesthetic%20Flower%20Tees.%20Please%20share%20more%20details%20💖"
+                  href={`https://wa.me/918358025165?text=Hey%20JainZEra%20✨%20I%20want%20to%20order%20the%20Aesthetic%20Flower%20Tee%20in%20${encodeURIComponent(product.color)}%20color%20💖`}
                   target="_blank"
                   className="bg-[#4d3b31] text-white text-center py-4 uppercase text-sm tracking-widest hover:bg-[#2f241e] transition rounded-full font-semibold"
                 >
@@ -53,7 +77,7 @@ export default function ProductPage() {
 
                 {/* INSTAGRAM DM */}
                 <a
-                  href="https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di"
+                  href={`https://www.instagram.com/jainzera?igsh=d3g0OWs5ZDV1b2di`}
                   target="_blank"
                   className="border border-[#4d3b31] text-[#4d3b31] text-center py-4 uppercase text-sm tracking-widest hover:bg-[#4d3b31] hover:text-white transition rounded-full font-semibold"
                 >
@@ -113,7 +137,9 @@ export default function ProductPage() {
             </p>
 
             <p>
-              Limited pieces available 🌸
+              Available Colors:
+              Mauve, Mustard Yellow,
+              Light Pink, Black & Brown 🤍
             </p>
 
           </div>
